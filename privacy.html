@@ -33,12 +33,22 @@
   <p>FoodIQ ("we", "us") respects your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have.</p>
 
   <h2>1. Information we collect</h2>
-  <p>We collect only the information needed to provide the app's core features:</p>
+  <p>We collect only the information needed to provide the app's core features.</p>
+
+  <p><strong>Stored only on your device (never sent to us):</strong></p>
   <ul>
-    <li><strong>Profile data</strong> you choose to enter: name, age (optional), allergens, dietary preferences, family member profiles. Stored locally on your device.</li>
-    <li><strong>Scan history</strong>: barcodes, product names, and timestamps of products you scan. Stored locally on your device. You can clear it at any time from Settings.</li>
-    <li><strong>Subscription status</strong> (Free or Pro), managed through Apple billing — we never see your payment details.</li>
-    <li><strong>Anonymous usage analytics</strong> (which screens you visit, errors that occur). No personal identifiers are sent.</li>
+    <li><strong>Profile data</strong> you choose to enter: name, age (optional), allergens, dietary preferences, and family member profiles.</li>
+    <li><strong>Scan history</strong>: barcodes, product names, and timestamps of products you scan. You can clear it at any time from Settings.</li>
+  </ul>
+
+  <p><strong>Transmitted off your device:</strong></p>
+  <ul>
+    <li><strong>Anonymous account identifier.</strong> On first launch we create an anonymous account (a random ID) so the app can function. No email, password, or social login is required, and this ID is not tied to your real-world identity.</li>
+    <li><strong>Basic app settings</strong> linked to that anonymous ID: country code, language, subscription tier, and a last-active timestamp.</li>
+    <li><strong>Push notification token</strong> (if you enable notifications), so we can deliver alerts to your device.</li>
+    <li><strong>Subscription status</strong> (Free or Pro), managed through Apple billing and RevenueCat — we never see your payment card details.</li>
+    <li><strong>Product contributions</strong> you optionally submit: if a scanned product is missing or incorrect, you may send us the barcode, product name, brand, and ingredients to improve the shared product database. This is sent only when you choose to submit it.</li>
+    <li><strong>Anonymous diagnostics</strong> (crash logs and performance data) to help us fix bugs. No personal identifiers are attached.</li>
   </ul>
 
   <h2>2. What we do NOT collect</h2>
@@ -49,15 +59,19 @@
   </ul>
 
   <h2>3. Third-party services</h2>
-  <p>The app communicates with the following services to fetch product data and process subscriptions:</p>
+  <p>The app communicates with the following services to fetch product data, sync basic settings, and process subscriptions:</p>
   <ul>
     <li><strong>Open Food Facts</strong> — to look up product details by barcode (public open database).</li>
-    <li><strong>RevenueCat</strong> — for subscription management.</li>
-    <li><strong>Sentry</strong> — for crash and error reporting (anonymous).</li>
+    <li><strong>USDA FoodData Central</strong> — to look up nutrition data for some products by name.</li>
+    <li><strong>Supabase</strong> — our backend, used to store your anonymous account, basic settings (country, language, subscription tier, last-active), push token, and any product contributions you submit.</li>
+    <li><strong>RevenueCat</strong> — for subscription management and validation.</li>
+    <li><strong>Apple Push Notification service (APNs)</strong> — to deliver notifications to your device, if enabled.</li>
+    <li><strong>Sentry</strong> — for anonymous crash and performance reporting.</li>
   </ul>
+  <p>We do not sell your data, share it with advertisers, or use it to track you across other apps or websites.</p>
 
   <h2>4. Your rights</h2>
-  <p>You can review, modify, or delete your profile and scan history at any time directly inside the app. Uninstalling the app removes all locally stored data.</p>
+  <p>You can review, modify, or delete your profile and scan history at any time directly inside the app. Uninstalling the app removes all locally stored data. To request deletion of the limited data associated with your anonymous account on our servers, email us at <a href="mailto:app.support.535@gmail.com">app.support.535@gmail.com</a>.</p>
 
   <h2>5. Children</h2>
   <p>FoodIQ is intended for general audiences and not directed at children under 13. We do not knowingly collect data from children.</p>
